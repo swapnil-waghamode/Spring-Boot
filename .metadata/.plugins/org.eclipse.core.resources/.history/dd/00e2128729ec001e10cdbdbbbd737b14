@@ -1,0 +1,14 @@
+package com.lambdaexpression;
+
+public class LambdaExpression {
+
+	public static void main(String[] args) {
+ 
+		Employee emp = () -> "Software Engineer";
+		
+		System.out.println(fun.getName());
+
+
+	}
+
+}

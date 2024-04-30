@@ -1,0 +1,7 @@
+package in.ashokit.binding;
+
+s
+public class User {
+
+	private Integer id;
+}

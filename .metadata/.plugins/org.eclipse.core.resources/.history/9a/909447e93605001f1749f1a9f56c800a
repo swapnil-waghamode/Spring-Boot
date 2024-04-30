@@ -1,0 +1,27 @@
+package in.ashokit.controller;
+
+import org.springframework.stereotype.Controller;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+import in.ashokit.request.Passanger;
+
+@Controller
+public class MakeMyTripController {
+	
+	
+	public String bookTicket(@ModelAttribute("passanger") Passanger passanger) {
+		
+	}
+
+	@GetMapping("/")
+	public String loadForm(Model model) {
+		
+		model.addAttribute("passanger", new Passanger());
+		return "index";
+	}
+	
+	
+}

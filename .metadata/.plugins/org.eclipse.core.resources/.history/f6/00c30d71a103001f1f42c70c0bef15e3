@@ -1,0 +1,20 @@
+package in.ashokit.service;
+
+import in.ashokit.request.Passanger;
+import in.ashokit.response.Ticket;
+
+public class BookingServiceImpl implements BookingService {
+
+	@Override
+	public Ticket bookTicket(Passanger passanger) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Ticket getTicket(Integer ticketNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

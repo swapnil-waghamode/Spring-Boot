@@ -1,0 +1,8 @@
+package in.ashokit.entity;
+
+import lombok.Data;
+
+@Data
+public class Student {
+
+}

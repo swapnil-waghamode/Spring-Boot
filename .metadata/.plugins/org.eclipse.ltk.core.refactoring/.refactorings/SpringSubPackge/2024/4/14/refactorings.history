@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.app.test.MyCacheApp&apos; to &apos;MyCacheData&apos;&#x0D;&#x0A;- Original project: &apos;SpringSubPackge&apos;&#x0D;&#x0A;- Original element: &apos;com.app.test.MyCacheApp&apos;&#x0D;&#x0A;- Renamed element: &apos;com.app.test.MyCacheData&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MyCacheApp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.app.test{MyCacheApp.java[MyCacheApp" matchStrategy="1" name="MyCacheData" qualified="false" references="true" similarDeclarations="false" stamp="1712155462838" textual="false" version="1.0"/>
+</session>

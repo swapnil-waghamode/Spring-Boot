@@ -1,0 +1,19 @@
+package in.ashokit.rest;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokit.binding.User;
+
+@RestController
+public class UserRestController {
+
+	private Map<Integer, User> map = new  HashMap<>();
+	
+	public String addUser(User user) {
+		map.put(user.getId(), user);
+	}
+			
+}

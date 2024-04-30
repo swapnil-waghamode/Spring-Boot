@@ -1,0 +1,31 @@
+package com.lambdaandanonymsinnerclass;
+
+public class ThisVarLambda {
+	
+	int y = 1000;
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void doSomething() {
+		
+		int x = 4;
+		
+		Employee e = ()->{
+//			x = 5; x won't get modify as it become final variable
+			return 10;
+		};
+		
+		Employee emp = new Employee() {
+			
+			int x = 40;
+			@Override
+			public int getSalary() {
+//				Here x can be modified as it is instance variable to anonymous class
+				x = 50;
+				return 100;
+			}
+		};
+	}
+}

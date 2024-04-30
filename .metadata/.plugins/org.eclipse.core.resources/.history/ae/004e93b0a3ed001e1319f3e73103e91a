@@ -1,0 +1,9 @@
+package com.lambda.comparator;
+
+public class ComparatorUsingLambda {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

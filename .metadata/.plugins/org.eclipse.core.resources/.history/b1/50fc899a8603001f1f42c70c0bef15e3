@@ -1,0 +1,18 @@
+package in.ashokit.rest;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokit.entity.Student;
+
+@RestController
+public class StudentRestLogic {
+
+	
+	public ResponseEntity<String> save(@ResponseBody Student student){
+		
+		
+		return student;
+	}
+}

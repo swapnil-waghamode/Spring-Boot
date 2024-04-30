@@ -1,0 +1,34 @@
+package com.lambda.comparator;
+
+//import java.util.Map;
+//import java.util.TreeMap;
+
+public class StudentObjectSorting {
+
+	public static void main(String[] args) {
+		
+		Student s = new Student(100, null)
+		
+		
+
+//		Map<Integer, Student> m = new TreeMap<>();
+//		m.put(11, new Student(101, "Shogan"));
+//		m.put(10, new Student(103, "Delta"));
+//		m.put(5, new Student(99, "Regaltos"));
+//		m.put(8, new Student(1, "Spower"));
+//		
+//		System.out.println("Ascending sort as TreeMap");
+//		System.out.println(m);
+//		
+//		System.out.println("Descending sort using comparator");
+//		
+//		Map<Integer, Student> tm = new TreeMap<>((a,b)-> b-a );
+//		tm.put(11, new Student(101, "Shogan"));
+//		tm.put(10, new Student(103, "Delta"));
+//		tm.put(5, new Student(99, "Regaltos"));
+//		tm.put(8, new Student(1, "Spower"));
+//		
+//		System.out.println(tm);
+	}
+	
+}

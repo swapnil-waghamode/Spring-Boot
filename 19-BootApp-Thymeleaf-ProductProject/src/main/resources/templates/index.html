@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2>Enter Product Details</h2>
+
+	<!-- Display message -->
+	<p th:text="${msg}" th:if="${msg != null}" style="color: green;"></p>
+
+	<!-- Thymeleaf Form -->
+	<form th:action="@{/product}" th:object="${p}" method="post">
+		<table>
+			<tr>
+				<td><label for="name">Name:</label> <input type="text"
+					th:field="*{name}" id="name" /></td>
+			</tr>
+			<tr>
+				<td><label for="price">Price:</label> <input type="text"
+					th:field="*{price}" id="price" /></td>
+			</tr>
+			<tr>
+				<td><label for="qty">Quantity:</label> <input type="text"
+					th:field="*{qty}" id="qty" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Save" /></td>
+			</tr>
+		</table>
+	</form>
+
+	<!-- Link to view products -->
+	<a th:href="@{/products}">View Products</a>
+</body>
+</html>

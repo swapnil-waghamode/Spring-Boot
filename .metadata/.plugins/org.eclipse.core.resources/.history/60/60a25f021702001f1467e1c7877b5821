@@ -1,0 +1,11 @@
+package in.ashokit.binding;
+
+public class JavaToJson {
+
+	public static void main(String[] args) {
+		
+		Customer c = new Customer();
+		c.setId(1);
+		c.setName("Robert");
+	}
+}

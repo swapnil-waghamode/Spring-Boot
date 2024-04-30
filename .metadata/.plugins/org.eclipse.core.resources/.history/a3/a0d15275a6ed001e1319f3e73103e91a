@@ -1,0 +1,12 @@
+package com.lambda.comparator;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class LambdaWithMapComparator {
+
+	public static void main(String[] args) {
+		
+		Map<Integer, String> m = new TreeMap<>();
+	}
+}

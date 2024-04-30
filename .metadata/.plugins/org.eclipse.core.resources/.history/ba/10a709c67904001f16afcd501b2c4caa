@@ -1,0 +1,4 @@
+spring.application.name=31-IRCTC-REST-API
+
+spring.mvc.pathmatch.matching-strategy=ant-path-matcher
+

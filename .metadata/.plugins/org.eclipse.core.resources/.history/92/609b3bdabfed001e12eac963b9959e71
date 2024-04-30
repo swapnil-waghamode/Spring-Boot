@@ -1,0 +1,28 @@
+package com.lambdaandanonymsinnerclass;
+
+public class ThisVarLambda {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void doSomething() {
+		
+		int x = 4;
+		
+		Employee e = ()->{
+//			x = 5; x won't get modify as it become final variable
+			return 10;
+		};
+		
+		Employee emp = new Employee() {
+			
+			int x = 40;
+			@Override
+			public int getSalary() {
+				
+				return 100;
+			}
+		};
+	}
+}

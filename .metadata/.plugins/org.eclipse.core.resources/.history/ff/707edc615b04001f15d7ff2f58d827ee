@@ -1,0 +1,18 @@
+package in.ashokit.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import org.springdoc.core.GroupedOpenApi;
+
+@Configuration
+public class SwaggerConfig {
+
+    @Bean
+    public GroupedOpenApi apiDoc() {
+        return GroupedOpenApi.builder()
+                .group("ashokit-api") // Name of your API group
+                .pathsToMatch("src/main/java/in/ashokit/rest") // Base path for your REST controllers 
+                .build();
+    }
+}

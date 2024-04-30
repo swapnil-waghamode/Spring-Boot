@@ -1,0 +1,10 @@
+package in.ashokit.binding;
+
+import java.io.File;
+
+public class JsonToJava {
+
+	public static void main(String[] args) {
+		File f = new File("customer.json");
+	}
+}

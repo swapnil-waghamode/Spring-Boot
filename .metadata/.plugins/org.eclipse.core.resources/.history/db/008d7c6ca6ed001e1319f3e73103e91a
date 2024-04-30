@@ -1,0 +1,11 @@
+package com.lambda.comparator;
+
+import java.util.Map;
+
+public class LambdaWithMapComparator {
+
+	public static void main(String[] args) {
+		
+		Map<Integer, String>
+	}
+}

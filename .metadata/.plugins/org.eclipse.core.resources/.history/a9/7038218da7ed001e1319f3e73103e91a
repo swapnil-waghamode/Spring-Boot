@@ -1,0 +1,16 @@
+package com.lambda.comparator;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class StudentObjectSorting {
+
+	public static void main(String[] args) {
+
+		Map<Integer, Student> m = new TreeMap<>();
+		m.put(11, new Student(101, "Shogan"));
+		m.put(10, new Student(103, "Delta"));
+		m.put(5, new Student(99, "Shogan"));
+		m.put(8, new Student(101, "Shogan"));
+	}
+}

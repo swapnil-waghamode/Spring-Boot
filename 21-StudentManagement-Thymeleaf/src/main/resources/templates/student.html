@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+	crossorigin="anonymous">
+
+<title>Student Home</title>
+
+
+<script type="text/javascript">
+	function stDelete() {
+		return confirm("Are you sure, you want to delete?")
+	}
+</script>
+</head>
+<body>
+
+	<div class="container pt-3 pb-3">
+
+		<h2>Student Home</h2>
+        <hr>
+		<p th:text="${dmsg}" class="text-danger"></p>
+
+		<a th:href="@{/}" class="btn btn-primary">+ Add Student</a>
+
+		<table class="table table-bordered table-striped mt-2">
+
+			<thead>
+				<tr>
+
+					<td>Student Id</td>
+					<td>Student Name</td>
+					<td>Student Gender</td>
+					<td>Student Address</td>
+					<td>Action</td>
+
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr th:each="student , stat:${students}">
+
+					<td th:text="${stat.count}"></td>
+					<td th:text="${student.name}"></td>
+					<td th:text="${student.gender}"></td>
+					<td th:text="${student.address}"></td>
+					<td> <a th:href="@{/edit?(sid=${student.sid})}"
+						 class="btn btn-success">
+						 Edit</a>
+					
+					<a th:href="@{/delete?(sid=${student.sid})}"
+					   class="btn btn-danger" onclick="return stDelete()">
+					   Delete</a></td>
+				</tr>
+
+                <tr>
+                 
+                  <td th:if="${students == null or students.isEmpty()}" colspan="5" class= "text-center">
+                      No Students Available
+                  </td>
+                
+                </tr>
+
+			</tbody>
+
+
+		</table>
+
+
+
+	</div>
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</body>
+</html>

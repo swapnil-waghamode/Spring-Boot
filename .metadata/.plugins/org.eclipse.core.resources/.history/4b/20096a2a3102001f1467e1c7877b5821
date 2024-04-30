@@ -1,0 +1,16 @@
+package in.ashokit.binding;
+
+import java.io.File;
+
+import javax.xml.bind.JAXBContext;
+
+public class UnMarshalDemo {
+
+	public static void main(String[] args) throws Exception
+	{
+		
+		File f = new File("customer.xml");
+		
+		JAXBContext jb = JAXBContext.newInstance(Customer.class);
+	}
+}

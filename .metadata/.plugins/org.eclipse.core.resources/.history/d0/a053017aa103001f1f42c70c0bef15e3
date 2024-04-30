@@ -1,0 +1,23 @@
+package in.ashokit.service;
+
+import org.springframework.stereotype.Service;
+
+import in.ashokit.request.Passanger;
+import in.ashokit.response.Ticket;
+
+@Service
+public class BookingServiceImpl implements BookingService {
+
+	@Override
+	public Ticket bookTicket(Passanger passanger) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Ticket getTicket(Integer ticketNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

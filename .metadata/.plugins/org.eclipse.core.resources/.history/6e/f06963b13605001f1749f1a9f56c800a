@@ -1,0 +1,17 @@
+package in.ashokit.controller;
+
+import org.springframework.stereotype.Controller;
+
+import org.springframework.ui.Model;
+
+import in.ashokit.request.Passanger;
+
+@Controller
+public class MakeMyTripController {
+
+	public String loadForm(Model model) {
+		
+		model.addAttribute("passanger", new Passanger());
+		return "index";
+	}
+}

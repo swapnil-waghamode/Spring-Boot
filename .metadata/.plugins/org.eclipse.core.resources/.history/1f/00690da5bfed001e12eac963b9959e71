@@ -1,0 +1,15 @@
+package com.lambdaandanonymsinnerclass;
+
+public class ThisVarLambda {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void doSomething() {
+		
+		Employee e = ()->{
+			return 10;
+		};
+	}
+}

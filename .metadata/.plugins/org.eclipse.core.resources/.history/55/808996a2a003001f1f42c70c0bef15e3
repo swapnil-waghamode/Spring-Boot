@@ -1,0 +1,11 @@
+package in.ashokit.response;
+
+public class Ticket {
+
+	private Integer ticketNo;
+	private String name;
+	private String from;
+	private String to;
+	private String doj;
+	private String trainNumber;
+}

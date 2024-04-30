@@ -1,0 +1,18 @@
+package in.ashokit.binding;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class JavaToJson {
+
+	public static void main(String[] args) {
+		
+		Customer c = new Customer();
+		c.setId(1);
+		c.setName("Robert");
+		c.setEmail("r@gmail.com");
+		c.setPhno(19382823l);
+		
+		
+		ObjectMapper mapper = new ObjectMapper();
+	}
+}

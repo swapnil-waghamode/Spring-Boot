@@ -1,0 +1,16 @@
+package com.lambda.comparator;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class LambdaWithMapComparator {
+
+	public static void main(String[] args) {
+		
+		Map<Integer, String> m = new TreeMap<>();
+		m.put(11, "Java");
+		m.put(10, "Python");
+		m.put(100, "SQL");
+		m.put(4, "c++");
+	}
+}

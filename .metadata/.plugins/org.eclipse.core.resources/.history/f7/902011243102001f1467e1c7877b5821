@@ -1,0 +1,12 @@
+package in.ashokit.binding;
+
+import java.io.File;
+
+public class UnMarshalDemo {
+
+	public static void main(String[] args) throws Exception
+	{
+		
+		File f = new File("customer.xml");
+	}
+}

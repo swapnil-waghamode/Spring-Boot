@@ -1,0 +1,36 @@
+package in.ashokit.service;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import in.ashokit.request.Passanger;
+import in.ashokit.response.Ticket;
+
+@Service
+public class MakeMyTripServiceImpl implements MakeMyTripService{
+
+    // for this working urls start irctc app with other port number and get this urls
+	private String BOOK_TICKET_URL = "http://localhost:1212/bookings/ticket";
+	
+	private String GET_TICKET_URL = "http://localhost:1212/bookings/ticket/{ticketNumber}";
+	
+	@Override
+	public Ticket bookTicket(Passanger passanger) {
+		
+		RestTemplate rt = new RestTemplate();
+		ResponseEntity<Ticket> resEntity = rt.postForEntity(BOOK_TICKET_URL, passanger,Ticket.class);
+		Ticket ticket = resEntity.getBody();
+		return ticket;
+	}
+
+	@Override
+	public Ticket getTicket(Integer ticketNumber) {
+		RestTemplate rt = new RestTemplate();
+		ResponseEntity<Ticket> resEntity = rt.getForEntity(GET_TICKET_URL, Ticket.class,ticketNumber );
+		
+		Ticket ticket = resEntity.getBody();
+		return ticket;
+	}
+
+}

@@ -1,0 +1,28 @@
+package in.ashokit.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+import in.ashokit.request.Passanger;
+import in.ashokit.response.Ticket;
+
+@Service
+public class BookingServiceImpl implements BookingService {
+	
+	Map<Integer, Ticket> tickets = new HashMap<>();
+
+	@Override
+	public Ticket bookTicket(Passanger passanger) {
+		
+		return null;
+	}
+
+	@Override
+	public Ticket getTicket(Integer ticketNumber) {
+		
+		return null;
+	}
+
+}

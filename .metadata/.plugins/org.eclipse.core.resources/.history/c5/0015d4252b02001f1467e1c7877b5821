@@ -1,0 +1,10 @@
+package in.ashokit.binding;
+
+public class MarshalDemo {
+
+	public static void main(String[] args) {
+		
+		Customer c = new Customer();
+		c.setId(101);
+	}
+}

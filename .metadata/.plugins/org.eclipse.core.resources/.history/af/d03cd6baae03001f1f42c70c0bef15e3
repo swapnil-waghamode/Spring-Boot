@@ -1,0 +1,12 @@
+package in.ashokit.rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@RestController
+public class BookRestController {
+
+	
+}
+

@@ -1,0 +1,37 @@
+package in.ashokit.service;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.client.RestTemplate;
+
+import in.ashokit.request.Passanger;
+import in.ashokit.response.Ticket;
+
+@Service
+public class MakeMyTripServiceImpl implements MakeMyTripService{
+
+//	This url for code purpose not working 
+	private String BOOK_TICKET_URL = "http://13.232.235.164:8080/ticket";
+	
+	private String GET_TICKET_URL = "http://13.232.235.164:8080/ticket/{ticketNumber}";
+	
+	@Override
+	public Ticket bookTicket(Passanger passanger) {
+		
+		RestTemplate rt = new RestTemplate();
+		ResponseEntity<Ticket> resEntity = rt.postForEntity(BOOK_TICKET_URL, passanger,Ticket.class);
+		Ticket ticket = resEntity.getBody();
+		return ticket;
+	}
+
+	@Override
+	public Ticket getTicket(Integer ticketNumber) {
+		RestTemplate rt = new RestTemplate();
+		ResponseEntity<Ticket> forEntity = rt.getForEntity(GET_TICKET_URL, Ticket.class,ticketNumber );
+		
+		Ticket ticket = forEntity.getBody();
+		return ticket;
+	}
+
+}

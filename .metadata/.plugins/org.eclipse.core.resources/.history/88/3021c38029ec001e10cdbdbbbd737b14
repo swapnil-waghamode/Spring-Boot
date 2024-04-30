@@ -1,0 +1,6 @@
+package com.lambdaexpression;
+
+public interface FunInterface {
+
+	String getName();
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Beans.xml&apos; to &apos;04-Spring-BeanLifecycle-App/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;02-IOC-DI-App&apos;&#x0D;&#x0A;- Destination element: &apos;04-Spring-BeanLifecycle-App/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;Beans.xml&apos;" description="Copy file" destination="=04-Spring-BeanLifecycle-App/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="src/main/java/Beans.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1704727681842" units="0" version="1.0"/>
+</session>
