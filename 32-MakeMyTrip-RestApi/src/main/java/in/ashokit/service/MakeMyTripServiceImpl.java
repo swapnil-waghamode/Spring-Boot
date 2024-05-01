@@ -37,6 +37,7 @@ public class MakeMyTripServiceImpl implements MakeMyTripService {
 		
 		Ticket ticket = webClient.post()
 					.uri(BOOK_TICKET_URL)
+					.header("Accept", "application/json")
 					.bodyValue(passanger)
 					.retrieve()
 					.bodyToMono(Ticket.class)
